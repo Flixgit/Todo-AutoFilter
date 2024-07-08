@@ -1,4 +1,4 @@
-
+This Bot Is Copied From <ahref="https://t.me/Hansaka_Anuhas">This Person's</a> AutoFilter Bot Repo.
 ## 𝐹𝑒𝑎𝑡𝑢𝑟𝑒𝑠
 - [x] 𝐼𝑀𝐷𝐵 𝑇𝑒𝑚𝑝𝑙𝑎𝑡𝑒 𝑆𝑒𝑡
 - [x] 𝑂𝑛𝑙𝑖𝑛𝑒 𝑠𝑡𝑟𝑒𝑎𝑚 𝑎𝑛𝑑 𝑑𝑜𝑤𝑛𝑙𝑜𝑎𝑑
