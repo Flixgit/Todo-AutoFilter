@@ -149,7 +149,7 @@ sudo docker run -d -p 80:80 --name Todo-AutoFilter todo-autofilter
 ## Credits 
 * [![EvaMaria](https://img.shields.io/static/v1?label=EvaMaria&message=Developers&color=critical)](https://t.me/TeamEvamaria)
 * [![Hansaka](https://img.shields.io/static/v1?label=Hansaka&message=TG&color=critical)](https://t.me/Hansaka_Anuhas)
-* [![Hansaka](https://img.shields.io/static/v1?label=Hansaka&message=TG&color=critical)](https://t.me/DrSixtyNine)
+* [![𝗧𝗢𝗗𝗢](https://img.shields.io/static/v1?label=Hansaka&message=TG&color=critical)](https://t.me/DrSixtyNine)
 
 ## Thanks To
  - [Pyrogram](https://github.com/pyrogram/pyrogram) and [PyroFork](https://github.com/Mayuri-Chan/pyrofork) For Telegram MTProto API Framework
