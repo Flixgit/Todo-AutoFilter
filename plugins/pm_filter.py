@@ -8,8 +8,8 @@ from pyrogram.errors.exceptions.bad_request_400 import MediaEmpty, PhotoInvalidD
 from Script import script
 from datetime import datetime, timedelta
 import pyrogram
-from info import ADMINS, URL, MAX_BTN, BIN_CHANNEL, IS_STREAM, DELETE_TIME, FILMS_LINK, IS_VERIFY, VERIFY_EXPIRE, LOG_CHANNEL, SUPPORT_GROUP, SUPPORT_LINK, UPDATES_LINK, PICS, PROTECT_CONTENT, IMDB, AUTO_FILTER, SPELL_CHECK, IMDB_TEMPLATE, AUTO_DELETE, LANGUAGES, PAYMENT_QR, QUALITY
-from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
+from info import ADMINS, URL, MAX_BTN, BIN_CHANNEL, IS_STREAM, DELETE_TIME, FILMS_LINK, IS_VERIFY, VERIFY_EXPIRE, LOG_CHANNEL, SUPPORT_GROUP, SUPPORT_LINK, UPDATES_LINK, PICS, PROTECT_CONTENT, IMDB, AUTO_FILTER, SPELL_CHECK, IMDB_TEMPLATE, AUTO_DELETE, LANGUAGES, PAYMENT_QR, QUALITY, OWNER_UPI_ID, OWNER_USERNAME
+from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery, InputMediaPhoto
 from pyrogram import Client, filters, enums
 from utils import get_size, is_subscribed, is_check_admin, get_wish, get_shortlink, get_verify_status, update_verify_status, get_readable_time, get_poster, temp, get_settings, save_group_settings
 from database.users_chats_db import db
@@ -53,7 +53,7 @@ async def group_search(client, message):
         await db.add_chat(message.chat.id, message.chat.title)
     chat_id = message.chat.id
     settings = await get_settings(chat_id)
-    user_id = message.from_user.id
+    user_id = message.from_user.id if message.from_user else None
     if settings["auto_filter"]:
         if not user_id:
             await message.reply("I'm not working for anonymous admin!")
@@ -515,6 +515,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
   
     if query.data.startswith("file"):
         ident, file_id = query.data.split("#")
+        try:
+            user = query.message.reply_to_message.from_user.id
+        except:
+            user = query.message.from_user.id
         user = query.message.reply_to_message.from_user.id
         if int(user) != 0 and query.from_user.id != int(user):
             return await query.answer(f"Hello {query.from_user.first_name},\nDon't Click Other Results!", show_alert=True)
@@ -897,6 +901,22 @@ async def cb_handler(client: Client, query: CallbackQuery):
             await query.message.reply(f"Successfully kicked deleted <code>{len(users_id)}</code> accounts.")
         else:
             await query.message.reply('Nothing to kick deleted accounts.')
+
+    elif query.data == "buy_premium":
+        btn = [[
+            InlineKeyboardButton("Send Payment Receipt 🧾", url=OWNER_USERNAME)
+        ],[
+            InlineKeyboardButton("⚠️ ᴄʟᴏsᴇ / ᴅᴇʟᴇᴛᴇ ⚠️", callback_data="close_data")
+        ]]
+        reply_markup = InlineKeyboardMarkup(btn)
+            await query.message.edit_media(
+            InputMediaPhoto(media=PAYMENT_QR,
+                caption=script.PREMIUM_PLAN_TEXT.format(OWNER_UPI_ID)
+            )
+        )
+            await query.message.edit_reply_markup(
+            reply_markup=reply_markup
+        )
 
 async def auto_filter(client, msg, s, spoll=False):
     if not spoll:
