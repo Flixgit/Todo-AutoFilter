@@ -61,21 +61,23 @@ I can't find the <b>{}</b> in my database! 🥲
 
 <blockquote><b><a href="https://t.me/Todo_Archive">Todo Archive ⚡</a></b></blockquote"""
 
-    HOW_TXT = """<b>ʜᴏᴡ ᴛᴏ ᴄᴏɴɴᴇᴄᴛ ʏᴏᴜʀ ᴏᴡɴ sʜᴏʀᴛɴᴇʀ ‼️
+    HOW_TXT = """<blockquote><b>How To Connect Your Own Shortner ‼</b></blockquote>
 
-➥ ɪꜰ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴄᴏɴɴᴇᴄᴛ ʏᴏᴜʀ ᴏᴡɴ sʜᴏʀᴛɴᴇʀ ᴛʜᴇɴ ᴊᴜsᴛ sᴇɴᴅ ᴛʜᴇ ɢɪᴠᴇɴ ᴅᴇᴛᴀɪʟs ɪɴ ᴄᴏʀʀᴇᴄᴛ ꜰᴏʀᴍᴀᴛ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ
+<i>➥ If you want me to connect your own shortner, then just send the given details in the correct format in your group.
 
-➥ ғᴏʀᴍᴀᴛ ↓↓↓
+➥ Format
 
-<code>/set_shortlink sʜᴏʀᴛɴᴇʀ sɪᴛᴇ sʜᴏʀᴛɴᴇʀ ᴀᴘɪ</code>
+<code>/set_shortlink Shortner Site Shortner API</code>
 
-➥ ᴇxᴀᴍᴘʟᴇ ↓↓↓
+ ➥ Example 
 
 <code>/set_shortlink mdisklink.link 5843c3cc645f5077b2200a2c77e0344879880b3e</code>
 
-➥ ɪꜰ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴄʜᴇᴄᴋ ᴡʜɪᴄʜ sʜᴏʀᴛᴇɴᴇʀ ʏᴏᴜ ʜᴀᴠᴇ ᴄᴏɴɴᴇᴄᴛᴇᴅ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴛʜᴇɴ sᴇɴᴅ ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ᴛᴏ ᴛʜᴇ ɢʀᴏᴜᴘ /get_shortlink
+➥ If you want to check, which shortner you have connected to your group. Then send /get_shortlink in group.</i>
 
-📝 ɴᴏᴛᴇ:- ʏᴏᴜ sʜᴏᴜʟᴅ ɴᴏᴛ ʙᴇ ᴀɴ ᴀɴᴏɴʏᴍᴏᴜs ᴀᴅᴍɪɴ ɪɴ ɢʀᴏᴜᴘ. sᴇɴᴅ ᴄᴏᴍᴍᴀɴᴅ ᴡɪᴛʜᴏᴜᴛ ʙᴇɪɴɢ ᴀɴ ᴀɴᴏɴʏᴍᴜs ᴀᴅᴍɪɴ.</b>"""
+<blockquote><b>📝 NOTE:-</b></blockquote>
+
+<i>You should not be an anonymous admin in group. Send command without being an anonymous admin.</i>"""
 
     IMDB_TEMPLATE = """<blockquote><b>Query: {query}</b></blockquote>
 
