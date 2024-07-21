@@ -4,7 +4,7 @@ class script(object):
 
 <blockquote><i>My Name Is {bot} 🎃.</i></blockquote>
 
-<i>I Can Provide Movies For You, Just Add Me In Your Gorup Or Join Our Group Or Just Search In The PM 😁</i>
+<i>I Can Provide Movies, Series, Anime, Documentry And More For You, Just Add Me In Your Gorup Or Join Our Group Or Just Search In The PM 😁</i>
 
 <blockquote><b><a href="https://t.me/Todo_Archive">Todo Archive ⚡</a></b></blockquote>"""
 
