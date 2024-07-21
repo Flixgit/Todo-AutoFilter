@@ -86,10 +86,10 @@ I can't find the <b>{}</b> in my database! 🥲
 <blockquote><b><a href="https://t.me/Todo_Archive">Todo Archive ⚡</a></b></blockquote>"""
 
     FILE_CAPTION = """<b>{file_name}</b>
+    
+<b><i>🚫 Click On The Close Button If You Forwarded The File 🚫</i></b>
 
-<blockquote><b><a href="https://t.me/Todo_Archive">Todo Archive ⚡</a></b></blockquote>
-
-🚫 Click On The Close Button If You Forwarded The File 🚫"""
+<blockquote><b><a href="https://t.me/Todo_Archive">Todo Archive ⚡</a></b></blockquote>"""
 
     WELCOME_TEXT = """👋 Hello {mention}, Welcome to {title} group! 💞
 
