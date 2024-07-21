@@ -59,7 +59,7 @@ I can't find the <b>{}</b> in my database! 🥲
 
 » Step 3:- Click on the below given button to know how to connect your shortner with this bot.</i>
 
-<blockquote><b><a href="https://t.me/Todo_Archive">Todo Archive ⚡</a></b></blockquote"""
+<blockquote><b><a href="https://t.me/Todo_Archive">Todo Archive ⚡</a></b></blockquote>"""
 
     HOW_TXT = """<blockquote><b>How To Connect Your Own Shortner ‼</b></blockquote>
 
